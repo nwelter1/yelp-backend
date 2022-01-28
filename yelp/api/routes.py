@@ -6,7 +6,7 @@ import os
 api = Blueprint('api', __name__, url_prefix='/api')
 
 
-@api.route('/city/<city>/<term>')
+@api.route('/city/<city>/<term>', methods=['GET','POST'])
 def getbiz(city,term):
     print(city)
     url = 'https://api.yelp.com/v3/businesses/search'
