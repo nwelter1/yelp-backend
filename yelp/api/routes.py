@@ -17,3 +17,13 @@ def getbiz(city,term):
     res = requests.get(url, params = params, headers={'Authorization': f'Bearer {key}'})
     
     return res.json()
+
+@api.route('/bizid/<id>', methods=['GET','POST'])
+def get_info(id):
+      url = f'https://api.yelp.com/v3/businesses/{id}'
+      params = {
+            'locale': 'en_US'
+      }
+      key = os.environ['API_KEY']
+      res = requests.get(url, params = params, headers={'Authorization': f'Bearer {key}'})
+      return res.json()
