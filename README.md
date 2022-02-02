@@ -13,8 +13,8 @@ Simple Flask Appliction to handle API calls to the Yelp Fusion API. Designed as 
 - Follow instructions on [Yelp Fusion Docs](https://www.yelp.com/developers/documentation/v3/get_started) to get an API key. Store key in `.env` file
 
 ### API Routes
-- /api/city/<city>/<term> => GET request -- get top 20 businesses in a specific city and category filter
-- /api/business/<id> => GET request -- get business details given a Yelp biz ID
+- /api/city/\<city\>/\<term\> => GET request -- get top 20 businesses in a specific city and category filter
+- /api/business/\<id\> => GET request -- get business details given a Yelp biz ID
 
 #### React Frontend Example(s):
 - https://github.com/nwelter1/yelp-challenge
