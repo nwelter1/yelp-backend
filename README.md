@@ -1,7 +1,7 @@
 # Yelp Fusion API Call Handler
 
 ### Description
-Simple Flask Appliction to handle API calls to the Yelp Fusion API. Designed as a demo technical assessment for Coding Teple Alumni
+Simple Flask Appliction to handle API calls to the Yelp Fusion API. Designed as a demo technical assessment for Coding Temple Alumni
 - GET top businesses given a location and term
 - GET business details given a business ID
 
