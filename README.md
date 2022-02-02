@@ -11,6 +11,16 @@ Simple Flask Appliction to handle API calls to the Yelp Fusion API. Designed as 
 - create and activate a python virtualenv
 - Run `pip install -r requirements.txt`
 - Follow instructions on [Yelp Fusion Docs](https://www.yelp.com/developers/documentation/v3/get_started) to get an API key. Store key in `.env` file
+- Starting up the flask server:
+  - Set Environment variables in shell:
+    - Mac/Linux:
+      - `export FLASK_ENV=development`
+      - `export FLASK_APP=yelp`
+    - Windows:
+      - `set FLASK_ENV=development`
+      - `set FLASK_APP=yelp`
+  - Start server with `flask run` command
+
 
 ### API Routes
 - /api/city/\<city\>/\<term\> => GET request -- get top 20 businesses in a specific city and category filter
